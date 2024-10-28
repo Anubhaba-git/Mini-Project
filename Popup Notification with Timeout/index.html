@@ -1,1 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #notification {
+            display: none; /* Hidden by default */
+            background-color: #f44336; /* Red */
+            color: white;
+            padding: 30px;
+            height: 15px;
+            position: fixed;
+            top: 2px;
+            right: 30px;
+            z-index: 1000;
+            border-radius: 20px;
+        }
+    </style>
+    <title>Popup Notification</title>
+</head>
+<body>
 
+<button id="notifyBtn">Show Notification</button>
+<div id="notification">This is a notification!</div>
+
+<script>
+    document.getElementById('notifyBtn').addEventListener('click', function() {
+        const notification = document.getElementById('notification');
+        notification.style.display = 'block'; // Show notification
+
+        // Set timeout to hide notification after 5 seconds
+        setTimeout(() => {
+            notification.style.display = 'none'; // Hide notification
+        }, 5000);
+    });
+</script>
+
+</body>
+</html>
