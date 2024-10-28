@@ -1,1 +1,28 @@
-
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #ffffff;
+  }
+  
+  .container {
+    text-align: center;
+    background-color: #0be0d6;
+    padding: 30px;
+    border-radius: 130px;
+    box-shadow: 10px 14px 18px 10px rgba(0, 0, 0, 0.4);
+  }
+  
+  input, button {
+    padding: 10px;
+    margin: 10px;
+    font-size: 16px;
+  }
+  
+  #timerDisplay {
+    margin-top: 30px;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
